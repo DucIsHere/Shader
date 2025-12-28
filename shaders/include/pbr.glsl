@@ -29,10 +29,10 @@ vec3 BRDF_GGX(vec3 N, vec3 V, vec3 L, vec3 albedo, float metallic, float rough){
 
     vec3 H = normalize(V+L);
 
-    float NdotL=max(dot(N,L),0.0);
-    float NdotV=max(dot(N,V),0.0);
-    float NdotH=max(dot(N,H),0.0);
-    float VdotH=max(dot(V,H),0.0);
+    float NdotL = max(dot(N,L),0.0);
+    float NdotV = max(dot(N,V),0.0);
+    float NdotH = max(dot(N,H),0.0); 
+    float VdotH = max(dot(V,H),0.0);
 
     vec3 F0 = mix(vec3(0.04), albedo, metallic);
 
@@ -44,7 +44,7 @@ vec3 BRDF_GGX(vec3 N, vec3 V, vec3 L, vec3 albedo, float metallic, float rough){
 
     vec3 kD = (1.0 - F) * (1.0 - metallic);
 
-    return kD * albedo/pi + spec;
+    return kD * albedo / pi + spec;
 }
 
 #endif
