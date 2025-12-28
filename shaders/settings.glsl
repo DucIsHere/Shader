@@ -1,7 +1,7 @@
-#if !define SETTINGS_INCLUDE
-#define SETTINGS_INCUDE
+#ifndef !define SETTINGS_INCLUDE
+#define SETTINGS_INCLUDE
 
-const float shadowDisance           = 192.0; // [64.0 80.0 96.0 112.0 128.0 144.0 160.0 176.0 192.0 208.0 224.0 240.0 256.0 272.0 288.0 294.0 320.0 336.0 352.0 368.0 384.0 400.0 464.0 512.0 768.0 1024.0 2048.0 4096.0]
+const float shadowDistance           = 192.0; // [64.0 80.0 96.0 112.0 128.0 144.0 160.0 176.0 192.0 208.0 224.0 240.0 256.0 272.0 288.0 294.0 320.0 336.0 352.0 368.0 384.0 400.0 464.0 512.0 768.0 1024.0 2048.0 4096.0]
 const int shadowMapResolution       = 1024; // [512 1024 2048 4096 6144 8192 16384]
 const bool shadowHardwareFiltering  = true;
 const float shadowDistanceRenderMul = 1.0;
